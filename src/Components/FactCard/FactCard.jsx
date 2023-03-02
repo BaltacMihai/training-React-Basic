@@ -9,6 +9,9 @@ function FactCard({ refresh, setRefresh }) {
       setFact(res.data.activity);
     });
   }, [refresh]);
+  // In the example above, we use the useEffect hook to fetch data from an API when the component mounts.
+  //The empty array [] passed as the second argument to useEffect means that the effect
+  //will only run once, when the component first mounts.
 
   if (fact)
     return (
