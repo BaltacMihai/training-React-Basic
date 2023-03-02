@@ -1,0 +1,35 @@
+nav {
+  background-color: #19585d;
+  padding: 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.buttons button {
+  background-color: transparent;
+  border: none;
+  margin: 0 1rem;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  font-size: 1rem;
+
+  border-radius: 10px;
+}
+.buttons button:hover {
+  cursor: pointer;
+  border-bottom: 1px solid #03af09;
+  padding-bottom: calc(0.5rem - 1px);
+}
+
+.active {
+  border-bottom: 1px solid #019207 !important;
+  padding-bottom: calc(0.5rem - 1px) !important;
+}
+
+.p {
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 0;
+}

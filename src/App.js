@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import Main from "./Components/Main/Main";
+import Navbar from "./Components/Navbar/Navbar";
 
 function App() {
+  const [isJokeActive, setIsJokeActive] = useState(true);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar action={setIsJokeActive} first={isJokeActive} />
+      <Main isJokeActivate={isJokeActive} />
+    </>
   );
 }
 
 export default App;
+//https://uselessfacts.jsph.pl/api/v2/facts/random
+//https://v2.jokeapi.dev/joke/Any
